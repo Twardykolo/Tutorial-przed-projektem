@@ -1,6 +1,6 @@
 package com.tutorial.sandbox.DTO.Response;
 
-import com.tutorial.sandbox.Entity.Rats.Rat;
+import com.tutorial.sandbox.Entity.Rat;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,6 @@
-package com.tutorial.sandbox.Repository.Rats;
+package com.tutorial.sandbox.Repository;
 
-import com.tutorial.sandbox.Entity.Rats.Rat;
+import com.tutorial.sandbox.Entity.Rat;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

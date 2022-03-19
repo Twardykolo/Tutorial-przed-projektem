@@ -1,4 +1,4 @@
-package com.tutorial.sandbox.Entity.Rats;
+package com.tutorial.sandbox.Entity;
 
 import lombok.*;
 
