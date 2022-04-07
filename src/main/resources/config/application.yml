@@ -1,0 +1,4 @@
+moj-config:
+  weather:
+    url: 'http://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}&units={units}&lang={lang}'
+    key: 'b443b219f089e2bc28d7a8a2cc04fccf'
