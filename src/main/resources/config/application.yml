@@ -2,7 +2,5 @@ moj-config:
   weather:
     url: 'http://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}&units={units}&lang={lang}'
     key: 'b443b219f089e2bc28d7a8a2cc04fccf'
-  edamam:
-    link: 'https://api.edamam.com/api/recipes/v2?type=public&q={fraza}&app_id={id_apki}&app_key={klucz}'
-    id_apki: '95242af5'
-    klucz: '82c66bf83c6776da02c2fbc44c22aa8f'
+  yo:
+    link: 'https://yomomma-api.herokuapp.com/jokes/{numer}'
