@@ -13,33 +13,33 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @RestController
-@RequestMapping("/ratpi")
+@RequestMapping("/rats")
 public class RatController {
 
     @Autowired
     private RatService ratService;
 
-    @GetMapping("/rat")
+    @GetMapping
     public ResponseEntity<List<RatResponse>> getRats(){
         return ResponseEntity.ok(ratService.getAllRats());
     }
 
-    @GetMapping("/rat/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<RatResponse> getRat(@PathVariable("id") Long id){
         return ResponseEntity.ok(ratService.getRat(id));
     }
 
-    @PostMapping("/rat")
+    @PostMapping
     public ResponseEntity<RatResponse> createRat(@RequestBody RatRequest ratRequest){
         return ResponseEntity.ok(ratService.createRat(ratRequest));
     }
 
-    @PutMapping("/rat/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<RatResponse> updateRat(@RequestBody RatRequest ratRequest, @PathVariable("id") Long id){
         return ResponseEntity.ok(ratService.updateRat(ratRequest,id));
     }
 
-    @DeleteMapping("/rat/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteRat(@PathVariable Long id){
         ratService.deleteRat(id);
         return ResponseEntity.ok().build();
