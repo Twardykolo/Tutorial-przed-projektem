@@ -1,0 +1,1 @@
+alter table rats.rat add column creation_date date;
